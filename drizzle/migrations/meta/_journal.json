@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1793879849610,
+      "tag": "0000_gk_mart_secure_auth",
+      "breakpoints": true
+    }
+  ]
+}

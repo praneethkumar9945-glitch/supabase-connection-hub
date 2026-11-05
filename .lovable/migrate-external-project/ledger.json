@@ -1,0 +1,18 @@
+{
+  "source": "github",
+  "repository": "https://github.com/prxp5893-del/supabase-connection-hub.git",
+  "capabilities": [
+    { "capability": "application code and routes", "source": "GitHub repository", "outcome": "migrate", "status": "pending", "next_action": "Port the complete app into the TanStack Start project and verify its primary flows." },
+    { "capability": "database schema", "source": "repository migrations for profiles, staff roles, and shop records", "outcome": "migrate", "status": "pending", "next_action": "Recreate the required application schema in Lovable Cloud with grants, row policies, and signup lifecycle logic." },
+    { "capability": "application records", "source": "source database; no records export attached", "outcome": "migrate", "status": "pending", "next_action": "Request sanitized CSV or JSON exports after the preview; do not invent or seed the existing business data." },
+    { "capability": "authentication identities", "source": "source auth provider; no user export attached", "outcome": "migrate", "status": "pending", "next_action": "Request user identity export with email and original user IDs; preserve profile fields and map identities safely." },
+    { "capability": "authorization and staff roles", "source": "source database role table and app checks", "outcome": "migrate", "status": "pending", "next_action": "Move role checks to protected server-side database access and enforce role boundaries in policies." },
+    { "capability": "uploaded file bytes", "source": "no storage export or bucket evidence found yet", "outcome": "preserve", "status": "pending", "next_action": "Inspect storage usage and confirm whether user files require transfer." },
+    { "capability": "external providers", "source": "repository dependencies and integration code", "outcome": "preserve", "status": "pending", "next_action": "Inspect provider call sites and preserve compatible product integrations." },
+    { "capability": "public endpoints and callbacks", "source": "TanStack application routes", "outcome": "preserve", "status": "pending", "next_action": "Inspect route handlers and preserve existing external entry points." },
+    { "capability": "schedules and webhooks", "source": "repository config and database triggers", "outcome": "preserve", "status": "pending", "next_action": "Inspect for active schedules, webhooks, and triggers; preserve required behavior." },
+    { "capability": "source credentials", "source": "credentials found in public repository README", "outcome": "user action required", "status": "pending", "next_action": "Rotate/revoke the exposed source-provider keys; do not copy them into this project." },
+    { "capability": "cutover", "source": "source repository and source backend", "outcome": "pending", "status": "pending", "next_action": "Keep the source active until app, data, and identities are verified and cutover is explicitly approved." },
+    { "capability": "verification", "source": "preview app and Lovable Cloud", "outcome": "verify", "status": "pending", "next_action": "Verify build, login, access controls, primary business flows, and a representative new database write." }
+  ]
+}
